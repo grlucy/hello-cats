@@ -1,0 +1,241 @@
+/* * {
+  margin: 10px;
+} */
+:root {
+  --menuGreen: rgb(134, 255, 171);
+}
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 0 20px;
+}
+h1 {
+  color: gold;
+  font-family: "Courgette", cursive;
+  background: linear-gradient(to right, purple, pink, rgb(119, 61, 228));
+  display: inline;
+  transition: 0.7s;
+  clear: both;
+}
+h1:hover {
+  letter-spacing: 10px;
+}
+h2 {
+  text-shadow: 2px 1px 2px blueviolet;
+  color: white;
+}
+a {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu {
+  background-color: var(--menuGreen);
+  box-shadow: 10px 10px 0px 2px rgb(50, 50, 50);
+}
+#outer {
+  width: 100px;
+  visibility: hidden;
+}
+#first {
+  width: 100px;
+  background: rgb(252, 146, 181);
+  height: 20px;
+  margin-bottom: 0;
+  border-width: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#second {
+  width: 100px;
+  background: rgb(245, 122, 163);
+  height: 30px;
+  margin-top: 0;
+  border-width: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0;
+}
+p {
+  padding-right: 100px;
+  text-align: justify;
+}
+.best1 {
+  width: 500px;
+}
+#best1 {
+  background: paleturquoise;
+  display: block;
+}
+#cat {
+  float: left;
+  margin: 0px 30px 30px 0px;
+  width: 500px;
+}
+#cat img {
+  width: 500px;
+}
+section {
+  float: left;
+  display: block;
+}
+.aboutpic {
+  display: block;
+}
+.aboutpic img {
+  width: 200px;
+  margin: 30px;
+}
+.clickme {
+  background: pink;
+  width: 100px;
+  transition: 2s;
+}
+.clickme:hover {
+  transform: rotateZ(-700deg);
+}
+@media screen and (max-width: 500px) {
+  #cat {
+    float: none;
+    margin: 0px;
+    width: 100px;
+  }
+  #cat img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Games Page */
+#gamebg {
+  margin: 20px 20px 20px 0px;
+  background: linear-gradient(
+    to top,
+    rgb(31, 31, 31),
+    rgb(50, 50, 50),
+    rgb(25, 25, 25)
+  );
+  width: 600px;
+  height: 40vh;
+}
+#animated {
+  position: relative;
+  top: 18vh;
+  left: 150px;
+  background: var(--menuGreen);
+  width: 35px;
+  height: 35px;
+  animation: circle 3s linear 0.5s infinite;
+}
+@keyframes circle {
+  0% {
+    position: relative;
+    top: 18vh;
+    left: 150px;
+    background: var(--menuGreen);
+    width: 35px;
+    height: 35px;
+  }
+  16.7% {
+    position: relative;
+    top: 28vh;
+    left: 250px;
+    background: rgb(120, 225, 252);
+    width: 35px;
+    height: 35px;
+    border-radius: 17%;
+  }
+  33.4% {
+    position: relative;
+    top: 28vh;
+    left: 350px;
+    background: rgb(120, 122, 252);
+    width: 35px;
+    height: 35px;
+    border-radius: 33%;
+  }
+  50% {
+    position: relative;
+    top: 18vh;
+    left: 450px;
+    background: rgb(182, 102, 248);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  66.7% {
+    position: relative;
+    top: 8vh;
+    left: 350px;
+    background: rgb(120, 122, 252);
+    width: 35px;
+    height: 35px;
+    border-radius: 33%;
+  }
+  83.4% {
+    position: relative;
+    top: 8vh;
+    left: 250px;
+    background: rgb(120, 225, 252);
+    width: 35px;
+    height: 35px;
+    border-radius: 17%;
+  }
+  100% {
+    position: relative;
+    top: 18vh;
+    left: 150px;
+    background: var(--menuGreen);
+    width: 35px;
+    height: 35px;
+    transform: rotate(360deg);
+  }
+}
+/* Gallery Page */
+.pseudoElement {
+  width: 25vw;
+  height: 170px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+.pseudoElement img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.pseudoElement::before {
+  content: "";
+  transition: all 0.2s linear;
+  top: 0px;
+  left: 0px;
+}
+.pseudoElement::after {
+  content: "";
+  transition: all 0.2s linear;
+  top: 0px;
+  left: 0px;
+}
+.pseudoElement:hover::before {
+  content: "";
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: -2;
+  top: -10px;
+  left: -10px;
+}
+.pseudoElement:hover::after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: -1;
+  top: -5px;
+  left: -5px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fur Friend Finder</title>
+    <link rel="stylesheet" href="./external-style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <table id="top" class="menu" cellpadding="15">
+      <tr>
+        <td><a href="./index.html">Home</a></td>
+        <td><a href="./about.html">About</a></td>
+        <td><a href="./gallery.html">Gallery</a></td>
+        <td><a href="./games.html">Games</a></td>
+        <td><a href="./finder.html">Fur Friend Finder</a></td>
+        <td><a href="#">Support BARCS</a></td>
+      </tr>
+    </table>
+
+    <h1>Find your own Fur-Ever Friend</h1>
+    <p>
+      Just tell us a few things about you so that we can match you with your
+      perfect fur friend.
+    </p>
+    <form action="" method="">
+      <table cellpadding="4">
+        <tr>
+          <td><label for="Name">Name</label></td>
+          <td>
+            <input type="text" name="Name" id="Name" placeholder="Your Name" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Email">Email Address</label></td>
+          <td>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Your Email Address"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Location">Where are you located?</label></td>
+          <td>
+            <select name="Location" id="">
+              <option value="Hampton Roads">Hampton Roads</option>
+              <option value="Richmond">Richmond</option>
+              <option value="Washington, DC">Washington, DC</option>
+              <option value="Baltimore">Baltimore</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Species"
+              >What type of fur friend do you want to be matched with?</label
+            >
+          </td>
+          <td>
+            <input type="radio" name="Species" id="" value="cat" />&nbsp;Cat
+            <br />
+            <input type="radio" name="Species" id="" value="dog" />&nbsp;Dog
+            <br />
+            <input
+              type="radio"
+              name="Species"
+              id=""
+              value="rodent"
+            />&nbsp;Rodent
+            <br />
+            <input type="radio" name="Species" id="" value="other" />&nbsp;Other
+          </td>
+        </tr>
+        <tr>
+          <td width="170">
+            <label for="Qualities"
+              >What qualities are you looking for in a fur friend?</label
+            >
+          </td>
+          <td>
+            <textarea
+              name="Qualities"
+              id="Qualities"
+              cols="50"
+              rows="4"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="#"
+              >What types of fur friends do you currently have in your
+              home?</label
+            >
+          </td>
+          <td>
+            <input type="checkbox" name="Pets" id="" value="cat" />&nbsp;Cat
+            <br />
+            <input type="checkbox" name="Pets" id="" value="dog" />&nbsp;Dog
+            <br />
+            <input
+              type="checkbox"
+              name="Pets"
+              id=""
+              value="rodent"
+            />&nbsp;Rodent
+            <br />
+            <input type="checkbox" name="Pets" id="" value="other" />&nbsp;Other
+            <br />
+            <input type="checkbox" name="Pets" id="" value="none" />&nbsp;None
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" class="clickme" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div class="clickme">
+      Click Me
+    </div>
+    <p>&copy; 2019 Gina R. Lucy</p>
+  </body>
+</html>

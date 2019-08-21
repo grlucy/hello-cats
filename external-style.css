@@ -3,6 +3,7 @@
 } */
 :root {
   --menuGreen: rgb(134, 255, 171);
+  --purpleGradient: linear-gradient(to right, purple, pink, rgb(119, 61, 228));
 }
 body {
   font-family: "Open Sans Condensed", sans-serif;
@@ -11,7 +12,7 @@ body {
 h1 {
   color: gold;
   font-family: "Courgette", cursive;
-  background: linear-gradient(to right, purple, pink, rgb(119, 61, 228));
+  background: var(--purpleGradient);
   display: inline;
   transition: 0.7s;
   clear: both;
@@ -118,6 +119,47 @@ section {
   width: 600px;
   height: 40vh;
 }
+#gametext {
+  position: absolute;
+  left: 40px;
+  top: 70px;
+}
+#gametext h4 {
+  background: var(--purpleGradient);
+  padding: 3px 8px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: -5px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#gametext2 {
+  position: absolute;
+  left: 130px;
+  top: 180px;
+  /* For some reason both z-index and transform:translate break mix-blend-mode so this has been commented out until I know enough Javascript to mimic the transform:translate some other way */
+  /* animation: bounce 2s linear 0.5s infinite alternate; */
+}
+#gametext2 h4 {
+  background: white;
+  padding: 3px 8px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: -5px;
+  mix-blend-mode: screen;
+}
+/* @keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -50px);
+  }
+} */
 #animated {
   position: relative;
   top: 18vh;

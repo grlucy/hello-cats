@@ -139,7 +139,7 @@ section {
   position: absolute;
   left: 130px;
   top: 180px;
-  /* For some reason both z-index and transform:translate break mix-blend-mode so this has been commented out until I know enough Javascript to mimic the transform:translate some other way */
+  /* For some reason both z-index and transform:translate break mix-blend-mode so this animation has been commented out until I know enough Javascript to mimic the transform:translate some other way */
   /* animation: bounce 2s linear 0.5s infinite alternate; */
 }
 #gametext2 h4 {
@@ -234,10 +234,16 @@ section {
   }
 }
 /* Gallery Page */
+.flexbox {
+  display: flex;
+  border: 1px solid black;
+  padding: 20px 10px 10px 20px;
+  width: 90%;
+  flex-flow: row wrap;
+}
 .pseudoElement {
-  width: 25vw;
-  height: 170px;
-  margin: 20px;
+  height: 20vh;
+  margin: 10px;
   position: relative;
   display: inline-block;
 }
